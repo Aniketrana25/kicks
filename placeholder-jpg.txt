@@ -1,0 +1,7 @@
+# Placeholder Image
+
+For placeholder images, create a folder named 'images' and add placeholder.jpg or use any temporary image.
+
+For GitHub Pages, you'll need to replace these with your actual product images.
+
+Recommended image size: 400px × 320px for good product display.

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Art by You | Hand-Painted Shoes, Denim & More</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Custom Art</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#custom">Custom Design</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Custom Paintings & Art</h1>
+            <p>From shoes to denim jackets, I transform ordinary items into extraordinary wearable art. Each piece is handcrafted and unique, designed to make a statement.</p>
+            <a href="#products" class="btn">Explore Products</a>
+        </div>
+    </section>
+    
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">What I Offer</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👕</div>
+                    <h3>Custom Denim</h3>
+                    <p>Hand-painted designs on jackets and pants that make your outfit truly one-of-a-kind.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👟</div>
+                    <h3>Custom Shoes</h3>
+                    <p>Transform your footwear into wearable art with personalized designs and colors.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🖼️</div>
+                    <h3>Wall Art</h3>
+                    <p>Beautiful, custom paintings to brighten up your home or office space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="products" class="features">
+        <div class="container">
+            <h2 class="section-title">Product Catalog</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/placeholder.jpg" alt="Custom Painted Denim Jacket" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Custom Painted Denim Jacket</h3>
+                        <p class="product-price">₹3,500</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/placeholder.jpg" alt="Hand-Painted High Tops" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Hand-Painted High Tops</h3>
+                        <p class="product-price">₹2,800</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/placeholder.jpg" alt="Custom Wall Art" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Abstract Wall Art (16x20)</h3>
+                        <p class="product-price">₹4,200</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/placeholder.jpg" alt="Painted Denim Pants" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Painted Denim Pants</h3>
+                        <p class="product-price">₹3,200</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="custom" class="customizer">
+        <div class="container">
+            <h2 class="section-title">Design Your Custom Piece</h2>
+            <div class="customizer-container">
+                <div class="customizer-preview">
+                    <h3>Preview</h3>
+                    <div class="canvas-container">
+                        <!-- Preview will be displayed here -->
+                        <div id="preview-canvas" style="background-color: #3a3a3a; height: 100%; display: flex; justify-content: center; align-items: center; color: white;">
+                            Denim Preview
+                        </div>
+                        <img id="design-image" class="design-image" style="display: none;">
+                    </div>
+                </div>
+                <div class="customizer-options">
+                    <h3>Options</h3>
+                    <div class="form-group">
+                        <label>Select Base Item:</label>
+                        <select id="base-item" class="form-control">
+                            <option value="jacket">Denim Jacket</option>
+                            <option value="pants">Denim Pants</option>
+                            <option value="shoes">Shoes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Select Base Color:</label>
+                        <div class="color-options">
+                            <div class="color-option color-option-black active"></div>
+                            <div class="color-option color-option-white"></div>
+                            <div class="color-option color-option-grey"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Upload Design:</label>
+                        <input type="file" id="design-upload" accept="image/*" style="display: none;">
+                        <button id="upload-btn" class="upload-btn">Choose File</button>
+                        <p>Drag and position your design in the preview area.</p>
+                    </div>
+                    <a href="#contact" class="btn">Request This Design</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#custom">Custom Design</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="#">📷</a></li>
+                <li><a href="#">📱</a></li>
+                <li><a href="#">💼</a></li>
+            </ul>
+            <p class="copyright">© 2025 Custom Art. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
